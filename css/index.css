@@ -137,3 +137,48 @@
 .footer__name{
     margin-right: 1rem;
 }
+
+
+/*----------------------------------------------MEDIA--------------------------------------------------------*/
+
+@media (min-width:1024px){
+
+    .indexGallery__article--perros{
+        background-size: 190%;
+        background-position-x: -6vw;
+    }
+
+    .indexGallery__article--perros:hover{
+        background-size: 200%;
+    }
+
+    .indexGallery__article--pokemon{
+        background-size: 140%;
+    }
+
+    .indexGallery__article--pokemon:hover{
+        background-size: 150%;
+    }
+
+
+}
+
+@media (min-width:1200px){
+
+    .indexGallery__article--perros{
+        background-size: 160%;
+    }
+
+    .indexGallery__article--perros:hover{
+        background-size: 170%;
+    }
+
+    .indexGallery__article--pokemon{
+        background-size: 120%;
+    }
+
+    .indexGallery__article--pokemon:hover{
+        background-size: 130%;
+    }
+
+}
