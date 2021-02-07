@@ -5,8 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+
+    <!--CONTENEDOR-->
+    <div class="container">
+
+        <!--HEADER-->
+        <header class="header">
+            <h1 class="header__title">Inicio</h1>
+        </header>
+        
+        <!--MENU-->
+        <nav class="menu">
+
+            <ul class="menu__list">
+
+                <!--LINK INICIO-->
+                <li class="menu__listItem">
+                    <a href="index.html" class="menu__listLink">Inicio</a>
+                </li>
+
+                <!--LINK POKEMONS-->
+                <li class="menu__listItem">
+                    <a href="pokemon.html" class="menu__listLink">Pokemon</a>
+                </li>
+
+
+                <!--LINK PERROS-->
+                <li class="menu__listItem">
+                    <a href="perros.html" class="menu__listLink">Perros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--SECTION-->
+        <section class="indexGallery">
+
+            <!--ARTICLE 1-->
+            <article class="indexGallery__article--pokemon">
+
+            </article>
+
+            <!--ARTICLE 2-->
+            <article class="indexGallery__article--perros">
+                
+            </article>
+
+        </section>
+
+
+        <!--FOOTER-->
+        <footer class="footer">
+
+            <!--ARTICLE DE LA LISTA DE APIS-->
+            <article class="footer__listContainer">
+
+                <!--LISTA DE APIS-->
+                <h2 class="footer__listTitle">Apis usadas</h2>
+
+
+                <ul class="footer__list">
+
+                    <!--GOOGLE MAPS API-->
+                    <li class="footer__listItem">
+                        <a href="https://cloud.google.com/maps-platform?hl=es" class="footer__listLink">Google maps Api</a>
+                    </li>
+
+                    <!--POKEMON API-->
+                    <li class="footer__listItem">
+                        <a href="https://pokeapi.co/docs/v2" class="footer__listLink">Pokeapi</a>
+                    </li>
+
+                    <!--THE DOG API-->
+                    <li class="footer__listItem">
+                        <a href="https://docs.thedogapi.com/" class="footer__listLink">Thedogapi</a>
+                    </li>
+
+                    <!--PARSER NAME API (NOMBRES ALEATORIOS)-->
+                    <li class="footer__listItem">
+                        <a href="https://parser.name/api/" class="footer__listLink">Parser name api</a>
+                    </li>
+                </ul>
+
+            </article>
+
+
+            <!--ARTICLE CON MI NOMBRE-->
+            <article class="footer__nameContainer">
+
+                <h2 class="footer__name">Ruben Alba Gonzalez</h2>
+
+            </article>
+        </footer>
+
+
+
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="js/index.js"></script>
 </body>
 </html>
