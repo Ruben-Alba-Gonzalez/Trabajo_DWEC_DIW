@@ -1,0 +1,139 @@
+/*---------------------------------------CONTAINER GRID----------------------------------------*/
+.container{
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .3fr .4fr 5fr 1fr;              /*poner la ultima linea a 100px*/
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "gallery"
+        "footer"
+    ;
+}
+
+/*------------------------------------AREAS DEL GRID-----------------------------------------*/
+
+/*HEADER*/
+.header{
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    color: white;
+}
+
+
+/*MENU*/
+.menu{
+    grid-area: nav;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+}
+
+.menu__list{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu__listItem{
+    display: inline-block;
+}
+
+.menu__listLink{
+    text-decoration: none;
+    color: white;
+    padding: .7rem 3.5rem;
+    border-radius: 6px;
+}
+
+.menu__listLink--active{
+    background-color: green;
+}
+
+.menu__listLink:hover:not(.menu__listLink--active){
+    background-color: green;
+}
+
+
+/*GALLERY*/
+.indexGallery{
+    grid-area: gallery;
+    display: flex;
+    justify-content: center;
+}
+
+.indexGallery__article{
+    width: 50%;
+}
+
+.indexGallery__article--pokemon{
+    background-image: url(../images/pokemon_index_fondo.jpg);
+    background-size: 100%;
+    background-position: center;
+    opacity: .5;
+}
+
+.indexGallery__article--pokemon:hover{
+    background-size: 110%;
+    opacity: 1;
+    transition: background-size 2s,opacity 2s;
+}
+
+
+.indexGallery__article--perros{
+    background-image: url(../images/perro_index_fondo.jpg);
+    background-size: 130%;
+    background-position: center;
+    opacity: .5;
+}
+
+.indexGallery__article--perros:hover{
+    background-size: 140%;
+    opacity: 1;
+    transition: background-size 2s,opacity 2s;
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer__listContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__listTitle{
+    margin-top: 0px;
+}
+
+.footer__listLink{
+    text-decoration: none;
+    color: rgb(170, 159, 159);
+}
+
+.footer__nameContainer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer__name{
+    margin-right: 1rem;
+}
