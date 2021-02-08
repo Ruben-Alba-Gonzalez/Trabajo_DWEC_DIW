@@ -63,8 +63,13 @@
         "titulo image"
         "text nada"
     ;
+    background: url(../images/geometric-leaves.png);
+    border-radius: 80px;
+    width: 80%;
     margin-top: 3rem;
-    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
 }
 
 .view__titleContainer{
@@ -72,11 +77,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../images/flor.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    border-radius: inherit;
 }
 
 .view__title{
     font-family: 'Dancing Script', cursive;
-    color: white;
     font-size: 5em;
 }
 
@@ -91,14 +99,14 @@
     grid-area: text;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: flex-start;
-    color: white;
 }
 
 .view__text{
-    margin-left: 2rem;
+    margin-left: 7rem;
     font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+
 }
 
 
