@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/*--------------------------------------CONTAINER GRID-------------------------*/
+.container{
+    width: 100%;
+    background-color: #333;
+    display: grid;
+    grid-template-rows: 8vh 5vh 87vh 84vh 16vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "gallery"
+        "view"
+        "footer"
+    ;
+}
+
+
+/*------------------------------------AREAS DEL GRID----------------------------------*/
+
+/*HEADER*/
+.header{
+    grid-area: header;
+}
+
+
+/*MENU*/
+.menu{
+    grid-area: nav;
+}
+
+
+/*GALERIA*/
+.gallery{
+    grid-area: gallery;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery__item{
+    width: 24.6vw;
+    height: 29vh;
+    border: 1px solid transparent;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery__item:hover{
+    border: 1px solid white;
+}
+
+
+/*VIEW*/
+.view{
+    grid-area: view;
+    display: grid;
+    grid-template-rows: 34vh 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "titulo image"
+        "text nada"
+    ;
+    margin-top: 3rem;
+    border: 1px solid white;
+}
+
+.view__titleContainer{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view__title{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 5em;
+}
+
+.view__imageContainer{
+    grid-area: image;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.view__textContainer{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+}
+
+.view__text{
+    margin-left: 2rem;
+    font-size: 2em;
+}
+
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+}
