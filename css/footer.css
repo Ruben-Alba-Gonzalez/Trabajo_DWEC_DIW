@@ -1,0 +1,32 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer__listContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__listTitle{
+    margin-top: 0px;
+}
+
+.footer__listLink{
+    text-decoration: none;
+    color: rgb(170, 159, 159);
+}
+
+.footer__nameContainer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer__name{
+    margin-right: 1rem;
+}

@@ -1,0 +1,44 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    color: white;
+}
+
+
+/*MENU*/
+.menu{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+}
+
+.menu__list{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu__listItem{
+    display: inline-block;
+}
+
+.menu__listLink{
+    text-decoration: none;
+    color: white;
+    padding: .7rem 3.5rem;
+    border-radius: 6px;
+}
+
+.menu__listLink--active{
+    background-color: green;
+}
+
+.menu__listLink:hover:not(.menu__listLink--active){
+    background-color: green;
+}
