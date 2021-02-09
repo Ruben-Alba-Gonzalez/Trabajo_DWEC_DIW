@@ -85,7 +85,7 @@
 
 .view__title{
     font-family: 'Dancing Script', cursive;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .view__imageContainer{
@@ -103,7 +103,7 @@
 }
 
 .view__text{
-    margin-left: 7rem;
+    margin-left: 20%;
     font-size: 2em;
     font-family: 'Dancing Script', cursive;
 
@@ -113,4 +113,83 @@
 /*FOOTER*/
 .footer{
     grid-area: footer;
+}
+
+
+/*--------------------------------------------MEDIA--------------------------------------*/
+
+@media (min-width:1280px){
+    
+    /*HEADER Y MENU*/
+
+
+    
+    /*TARJETA DE PERRO*/
+    .view__title{
+        padding-left: 30%;
+    }
+
+    .view__text{
+        font-size: 1.7em;
+    }
+
+    /*FOOTER*/
+    .footer{
+        font-size: .8em;
+    }
+}
+
+@media (min-width:1910px){
+    
+    /*HEADER Y MENU*/
+    .header{
+        font-size: 1.5em;
+    }
+
+    .menu{
+        font-size: 1.4em;
+    }
+
+    /*TARJETA DEL PERRO*/
+    .view__title{
+        font-size: 6em;
+    }
+
+    .view__text{
+        font-size: 2.5em;
+    }
+
+
+    /*FOOTER*/
+    .footer{
+        font-size: 1.15em;
+    }
+}
+@media (min-width:2560px){
+
+    /*HEADER Y MENU*/
+    .header{
+        font-size: 2em;
+    }
+
+    .menu{
+        font-size: 1.8em;
+    }
+
+    /*TARJETA DEL PERRO*/
+    .view__title{
+        font-size: 8em;
+    }
+
+    .view__text{
+        font-size: 4em;
+    }
+
+
+    /*FOOTER*/
+    .footer{
+        font-size: 1.55em;
+    }
+
+
 }
