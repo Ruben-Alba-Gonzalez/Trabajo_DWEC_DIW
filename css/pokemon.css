@@ -38,8 +38,76 @@
 /*VIEW*/
 .view{
     grid-area: view;
-    border: 1px solid white;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr 4fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "image image image image"
+        "name name name nada"
+        "habilidad habilidad habilidad nada"
+        "movimientos movimientos movimientos nada"
+    ;
 }
+
+
+.view__movimientosContainer{
+    grid-area: movimientos;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.view__nameContainer{
+    grid-area: name;
+}
+
+.view__habilidadContainer{
+    grid-area: habilidad;
+}
+
+/*VIEW__IMAGE*/
+.view__imageContainer{
+    grid-area: image;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "titulomas titulomas titulofem titulofem"
+        "imagenmb imagenmf imagenfb imagenff"
+    ;
+}
+
+.view__imageTitleMasc{
+    grid-area: titulomas;
+}
+
+.view__imageTitleFem{
+    grid-area: titulofem;
+}
+
+.view__imageContainer1-1{
+    grid-area: imagenmb;
+}
+
+.view__imageContainer1-2{
+    grid-area: imagenmf;
+}
+
+.view__imageContainer2-1{
+    grid-area: imagenfb;
+}
+
+.view__imageContainer2-2{
+    grid-area: imagenff;
+}
+
+.view__imageTitleFem, .view__imageTitleMasc, .view__imageContainer1-1, .view__imageContainer1-2,.view__imageContainer2-1,.view__imageContainer2-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /*FOOTER*/
