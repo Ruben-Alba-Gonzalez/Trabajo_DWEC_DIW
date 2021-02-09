@@ -1,0 +1,48 @@
+/*-------------------------------------------CONTAINER GRID------------------------------------------*/
+.container{
+    width: 100%;
+    background-color: #333;
+    display: grid;
+    grid-template-rows: 8vh 5vh 60vh 84vh 16vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "map"
+        "view"
+        "footer"
+    ;
+}
+
+
+/*---------------------------------------------AREAS DEL GRID------------------------------------*/
+
+/*HEADER*/
+.header{
+    grid-area: header;
+}
+
+
+/*MENU*/
+.menu{
+    grid-area: nav;
+}
+
+
+/*MAPA*/
+.map{
+    grid-area: map;
+}
+
+
+/*VIEW*/
+.view{
+    grid-area: view;
+    border: 1px solid white;
+}
+
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+}
