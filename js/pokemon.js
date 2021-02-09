@@ -131,14 +131,12 @@ function mostrarMovimientos(url){
 /*------------------------------------------------EVENTOS----------------------------------------------*/
 const mostrarPokemon=(event)=>{
 
-  //alert("Se mostrara al pokemon mas cercano a tu posicion")
+  alert("Se mostrara al pokemon mas cercano a tu posicion")
 
   //SE HACE EL FETCH AL API DE LOS POKEMON PARA PREGUNTAR POR UN POKEMON ALEATORIO
   fetch('https://pokeapi.co/api/v2/pokemon/'+aleatorio(1,579)+'/')
     .then(response=>response.json())
     .then(json=>{
-
-      console.log(json)
 
       //AÑADO LOS SPRITES A LAS IMAGENES
       mb.src=json.sprites.back_default

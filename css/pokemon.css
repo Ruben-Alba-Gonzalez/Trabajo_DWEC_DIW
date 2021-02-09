@@ -153,3 +153,77 @@
 .footer{
     grid-area: footer;
 }
+
+/*-----------------------------------------MEDIA---------------------------------------*/
+@media (min-width:1280px){
+
+    /*HEADER Y MENU*/
+
+
+    /*TARJETA DE POKEMON*/
+    .view__imageTitle{
+        font-size: 1.5em;
+    }
+
+    .view__text{
+        font-size: 1em;
+    }
+
+    .view__nameContainer{
+        margin-top: 0px;
+    }
+
+    /*FOOTER*/
+    .footer{
+        font-size: .8em;
+    }
+}
+
+@media (min-width:1920px){
+
+    /*HEADER Y MENU*/
+    .header{
+        font-size: 1.5em;
+    }
+
+    .menu{
+        font-size: 1.4em;
+    }
+
+    /*TARJETA DE POKEMON*/
+    .view__text, .view__listItem, .view__listTitle{
+        font-size: 1.5em;
+    }
+
+    /*FOOTER*/
+    .footer{
+        font-size: 1.15em;
+    }
+}
+
+@media (min-width:2560px){
+
+    /*HEADER Y MENU*/
+    .header{
+        font-size: 2em;
+    }
+
+    .menu{
+        font-size: 1.8em;
+    }
+
+    /*TARJETA DE POKEMON*/
+    .view__imageTitle{
+        font-size: 2em;
+    }
+
+    .view__text, .view__listItem, .view__listTitle{
+        font-size: 2em;
+    }
+
+
+    /*FOOTER*/
+    .footer{
+        font-size: 1.55em;
+    }
+}
