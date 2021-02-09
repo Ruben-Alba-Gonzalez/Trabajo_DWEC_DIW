@@ -45,8 +45,6 @@ const mostrarPerretes=(event)=>{
         .then(response=>response.json())
         .then(json=>{
 
-            console.log(json)
-
             let link=document.createElement('A')
 
             link.setAttribute("href","#view")

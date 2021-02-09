@@ -1,3 +1,13 @@
+@font-face{
+    font-family: "pokemon_hollow";
+    src: url(../font/Pokemon_Hollow.ttf);
+}
+
+@font-face{
+    font-family: "pokemon_solid";
+    src: url(../font/Pokemon_Solid.ttf);
+}
+
 /*-------------------------------------------CONTAINER GRID------------------------------------------*/
 .container{
     width: 100%;
@@ -38,7 +48,6 @@
 /*VIEW*/
 .view{
     grid-area: view;
-    background-color: white;
     display: grid;
     grid-template-rows: 4fr 1fr 1fr 4fr;
     grid-template-columns: repeat(4,1fr);
@@ -48,22 +57,39 @@
         "habilidad habilidad habilidad nada"
         "movimientos movimientos movimientos nada"
     ;
+    font-weight: bolder;
 }
 
-
+/*VIEW__MOVIMIENTOS*/
 .view__movimientosContainer{
     grid-area: movimientos;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
+.view__movimientosList--decorationNone{
+    list-style-type: none;
+}
+
+.view__listItem{
+    font-size: 1.2em;
+}
+
+
+/*TEXTOS*/
 .view__nameContainer{
     grid-area: name;
+    margin-top: 5vh;
 }
 
 .view__habilidadContainer{
     grid-area: habilidad;
+}
+
+.view__text{
+    margin-left: 10vw;
+    font-size: 1.3em;
 }
 
 /*VIEW__IMAGE*/
@@ -76,6 +102,14 @@
         "titulomas titulomas titulofem titulofem"
         "imagenmb imagenmf imagenfb imagenff"
     ;
+    background-image: url(../images/pokemon.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position-x: center;
+}
+
+.view__image{
+    width: 50%;
 }
 
 .view__imageTitleMasc{
@@ -100,6 +134,11 @@
 
 .view__imageContainer2-2{
     grid-area: imagenff;
+}
+
+.view__imageTitle{
+    font-family: "pokemon_hollow";
+    font-size: 2em;
 }
 
 .view__imageTitleFem, .view__imageTitleMasc, .view__imageContainer1-1, .view__imageContainer1-2,.view__imageContainer2-1,.view__imageContainer2-2{

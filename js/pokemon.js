@@ -1,5 +1,8 @@
 /*---------------------------------------------NODOS--------------------------------------------------*/
 
+//VIEW
+const view=document.getElementById('view')
+
 //IMAGEN DEL MODELO NORMAL DE ESPALDAS (MB)
 const mb=document.getElementById('mb')
 
@@ -11,7 +14,6 @@ const fb=document.getElementById('fb')
 
 //IMAGEN DEL MODELO SHINY DE FRENTE (FF)
 const ff=document.getElementById('ff')
-
 
 //TEXTO DEL NOMBRE
 const nombre=document.getElementById('name')
@@ -30,16 +32,6 @@ const preciList=document.getElementById('precilist')
 
 
 /*---------------------------------------------FRAGMENTS---------------------------------------------*/
-
-//FRAGMENT DE MOVIMIENTOS
-const moviFragment=document.createDocumentFragment()
-
-//FRAGMENT DE POTENCIAS
-const powerFragment=document.createDocumentFragment()
-
-//FRAGMENT DE PRECISIONES
-const preciFragment=document.createDocumentFragment()
-
 
 
 /*--------------------------------------------VARIABLES------------------------------------------------*/
@@ -84,8 +76,6 @@ function mostrarMovimientos(url){
   fetch(url)
     .then(response=>response.json())
     .then(json=>{
-
-      console.log(json)
 
       //CREO Y ANADO EL NOMBRE
       let movi=document.createElement('LI')
@@ -148,6 +138,8 @@ const mostrarPokemon=(event)=>{
     .then(response=>response.json())
     .then(json=>{
 
+      console.log(json)
+
       //AÑADO LOS SPRITES A LAS IMAGENES
       mb.src=json.sprites.back_default
       mf.src=json.sprites.front_default
@@ -164,6 +156,65 @@ const mostrarPokemon=(event)=>{
       for(let i=0;i<=3;i++){
         mostrarMovimientos(json.moves[i].move.url)
       }
+
+      switch(json.types[0].type.name){
+
+        case "bug":
+
+        case "flying":
+          
+        case "normal":
+          view.style.backgroundImage="url(images/textures/arbol.png)"
+          break;
+
+        case "water":
+
+        case "ice":
+          view.style.backgroundImage="url(images/textures/agua.png)"
+          break;
+
+        case "grass":
+          
+        case "ground":
+
+        case "fairy":
+          view.style.backgroundImage="url(images/textures/hojas.png)"
+          break;
+
+        case "rock":
+          
+        case "steel":
+
+        case "poison":
+          view.style.backgroundImage="url(images/textures/desierto.png)"
+          break;
+
+        case "ghost":
+          
+        case "psychic":
+
+        case "dark":
+          view.style.backgroundImage="url(images/textures/oscuro.png)"
+          view.style.color="white"
+          break;
+
+        case "dragon":
+          
+        case "fire":
+          view.style.backgroundImage="url(images/textures/fuego.gif)"
+          view.style.color="white"
+          break;
+
+        case "electric":
+          
+          
+        case "fighting":
+          view.style.backgroundImage="url(images/textures/rayo.png)"
+          view.style.color="white"
+          break;
+          
+      }
+
 
 
     })
