@@ -31,7 +31,7 @@
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: .3fr .4fr 5fr 1fr;              /*poner la ultima linea a 100px*/
+    grid-template-rows: 8vh 5vh 71vh 16vh;              /*poner la ultima linea a 100px*/
     grid-template-columns: 1fr;
     grid-template-areas: 
         "header"
@@ -131,13 +131,22 @@
 
 @media (min-width:1920px){
 
+    /*HEADER Y MENU*/
+    .header{
+        font-size: 1.5em;
+    }
+
+    .menu{
+        font-size: 1.4em;
+    }
+
     /*FOTOS DE LA GALERIA*/
     .indexGallery__article--perros{
-        background-size: 130%;
+        background-size: 140%;
     }
 
     .indexGallery__article--perros:hover{
-        background-size: 140%;
+        background-size: 150%;
     }
 
     .indexGallery__article--pokemon{
